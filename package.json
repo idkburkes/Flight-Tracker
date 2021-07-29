@@ -1,0 +1,38 @@
+{
+  "name": "cesium",
+  "version": "1.0.0",
+  "description": "Cesium Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "tail -f /dev/null",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CesiumHeatmap"
+  },
+  "keywords": [
+    "Cesium",
+    "Heatmap",
+    "Node.js",
+    "WebApp"
+  ],
+  "author": "Isaiah Burkes",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "cesium": "^1.83.0",
+    "nodemon": "^2.0.12"
+  }
+}
