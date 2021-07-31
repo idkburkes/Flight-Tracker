@@ -7,13 +7,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const cesiumSource = 'node_modules/cesium/Source';
 const cesiumWorkers = '../Build/Cesium/Workers';
 
+
 //Copy static files to the dist directory as part of the build process
 const CopywebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     context: __dirname,
     entry: {
-        app: './src/index.js'
+        app: './src/airplanemodel.js'
     },
     output: {
         filename: 'app.js',
@@ -26,7 +27,6 @@ module.exports = {
         // Enable webpack-friendly use of require in Cesium
         toUrlUndefined: true
     },
-    //Removed node: fs <- webpack-cli says fs unknown property
     module: {
         rules: [{
             test: /\.css$/,
@@ -34,7 +34,24 @@ module.exports = {
         }, {
             test: /\.(png|gif|jpg|jpeg|svg|xml|json)$/,
             use: [ 'url-loader' ]
-        }]
+        }, {
+            //Load files from src folder
+            test: /\.czml$/,
+            use: [ 
+                {
+                    loader: 'file-loader'
+                }
+            ]
+        } , {
+            test: /\.wasm$/,
+            use: [ 
+                {
+                    loader: 'wasm-loader'
+                }
+            ]
+        }
+    
+        ]
     },
     resolve: {
         alias: {
