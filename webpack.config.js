@@ -42,13 +42,6 @@ module.exports = {
                     loader: 'file-loader'
                 }
             ]
-        } , {
-            test: /\.wasm$/,
-            use: [ 
-                {
-                    loader: 'wasm-loader'
-                }
-            ]
         }
     
         ]

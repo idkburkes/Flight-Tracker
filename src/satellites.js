@@ -43,10 +43,10 @@ const flightData = JSON.parse(
 
 
 
-      //Try loading CZML file
-    viewer.dataSources.add(
-        Cesium.CzmlDataSource.load(czml)
-      );
+    //Try loading CZML file
+   // viewer.dataSources.add(
+   //     Cesium.CzmlDataSource.load(czml)
+   //   );
   
   
   
