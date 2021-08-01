@@ -5,7 +5,7 @@
 
 # Project Description #
 
-This project builds on the [CesiumJS](https://cesium.com/platform/cesiumjs/) platform to deliver a 3D modeling of historical data and live flight paths. I've collected geospatial data from aircrafts with a paid subscription to [Flightradar24](https://www.flightradar24.com/). The data, as shown below, is exported from .csv files containing altitude, heading, latitude, longitude, speed, as well as an Epoch timestamp at the time of measurement. I used Python (TODO: "and associated libraries") to convert data into [CZML](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide), a JSON scheme for describing dynamic scenes in virtual globes & maps. 
+This project builds on the [CesiumJS](https://cesium.com/platform/cesiumjs/) platform to deliver a 3D modeling of historical data and live flight paths. I've collected geospatial data from aircrafts with a paid subscription to [Flightradar24](https://www.flightradar24.com/). The data, as shown below, is exported from .csv files containing altitude, heading, latitude, longitude, speed, as well as an Epoch timestamp at the time of measurement. I used Python (TODO: "and associated libraries") to convert data into [CZML](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide), a JSON schema for describing dynamic scenes in virtual globes & maps. 
 
 ![csv-Data](./images/data.png)
 
