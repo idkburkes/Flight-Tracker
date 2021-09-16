@@ -16,7 +16,7 @@ Clone this repository
 - Open Git Bash or Terminal
 - Change the current working directory to the location where you want the cloned directory.
 ```bash
-git clone https://github.com/idkburkes/Live-Flight-Tracker.git
+git clone https://github.com/idkburkes/Flight-Tracker.git
 ```
 You must have [Node.js](https://nodejs.org/en/) installed in order to use the [Node Package Manager](https://www.npmjs.com/) to install necessary project dependencies and run the start script. 
 
